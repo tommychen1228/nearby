@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+        <ImageButton android:id="@+id/backButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/ic_nav_back"
+                     android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+        <TextView android:id="@+id/titleTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:textSize="16dp"
+                  android:textColor="#ffffff">
+        </TextView>
+    </RelativeLayout>
+    <ListView android:id="@+id/categoryListView"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:background="#ffffff"
+              android:cacheColorHint="@android:color/transparent">
+
+    </ListView>
+</LinearLayout>

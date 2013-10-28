@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+        <ImageButton android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/abs__ic_search"
+                android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:text="西科-搜周边"
+                  android:textSize="16dp"
+                  android:textColor="#ffffff">
+        </TextView>
+        <ImageButton android:id="@+id/settingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_setting"
+                android:background="@drawable/title_bar_button_bg"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+        </ImageButton>
+    </RelativeLayout>
+    <ListView android:id="@+id/categoryListView"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:background="#ffffff"
+              android:cacheColorHint="@android:color/transparent">
+
+    </ListView>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+        <TextView android:id="@+id/locationTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:textSize="16dp"
+                  android:textColor="#000000">
+        </TextView>
+        <ImageButton android:id="@+id/locateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_localbar_location"
+                android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        <ImageButton android:id="@+id/backButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_nav_back"
+                     android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+        <EditText android:id="@+id/keywordEditText"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:hint="请输入要所搜的内容"
+                  android:background="@drawable/abs__textfield_search_selected_holo_dark"
+                  android:textSize="16dp"
+                  android:textColor="#ffffff">
+        </EditText>
+
+        <ImageButton android:id="@+id/searchButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/abs__ic_search"
+                     android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+    </LinearLayout>
+    <ListView android:id="@+id/poiListView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:cacheColorHint="@android:color/transparent">
+
+    </ListView>
+</LinearLayout>

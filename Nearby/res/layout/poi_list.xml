@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+        <ImageButton android:id="@+id/backButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/ic_nav_back"
+                     android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+        <TextView android:id="@+id/titleTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:textSize="16dp"
+                  android:textColor="#ffffff">
+        </TextView>
+
+        <RelativeLayout android:id="@+id/modeButtonRelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/mapButton"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_action_map"
+                         android:background="@drawable/title_bar_button_bg">
+            </ImageButton>
+            <ImageButton android:id="@+id/listButton"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_action_list"
+                         android:background="@drawable/title_bar_button_bg">
+            </ImageButton>
+        </RelativeLayout>
+        <ImageButton android:id="@+id/refreshButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toLeftOf="@id/modeButtonRelativeLayout"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/ic_refresh"
+                     android:background="@drawable/title_bar_button_bg">
+        </ImageButton>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/rangeContailer"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:background="#DDDDDD"
+                  android:gravity="center">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="范围:"
+                  android:textColor="#000000"></TextView>
+        <TextView android:id="@+id/rangeTextView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#000000"
+                  android:text="3000m内"></TextView>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_down"></Button>
+
+    </LinearLayout>
+    <ViewFlipper android:id="@+id/poiModeViewFlipper"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+        <ListView android:id="@+id/poiListView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#ffffff"
+                  android:cacheColorHint="@android:color/transparent">
+
+        </ListView>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <com.baidu.mapapi.MapView android:id="@+id/poiMapView"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent">
+
+            </com.baidu.mapapi.MapView>
+            <Button android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/pre_button_bg"></Button>
+            <Button android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/previousButton"
+                    android:background="@drawable/next_button_bg"></Button>
+            <Button android:id="@+id/locateMeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/locate_button_bg"></Button>
+        </RelativeLayout>
+    </ViewFlipper>
+</LinearLayout>
