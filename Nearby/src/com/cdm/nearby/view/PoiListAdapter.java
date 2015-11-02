@@ -6,9 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import com.cdm.nearby.DistanceUtil;
+import com.cdm.nearby.util.DistanceUtil;
 import com.cdm.nearby.R;
-import com.cdm.nearby.common.L;
 import com.cdm.nearby.modal.Poi;
 
 import java.util.ArrayList;

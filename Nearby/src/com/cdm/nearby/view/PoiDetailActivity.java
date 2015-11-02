@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import com.baidu.mapapi.*;
-import com.cdm.nearby.DistanceUtil;
+import com.cdm.nearby.util.DistanceUtil;
 import com.cdm.nearby.R;
 import com.cdm.nearby.modal.Location;
 import com.cdm.nearby.modal.LocationManager;
