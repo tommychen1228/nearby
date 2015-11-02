@@ -1,4 +1,4 @@
-package com.cdm.nearby;
+package com.cdm.nearby.util;
 
 import com.cdm.nearby.common.L;
 
