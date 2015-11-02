@@ -76,7 +76,7 @@ public class PoiManager extends BaseManger {
 
         ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("source", "174030432"));
-        params.add(new BasicNameValuePair("access_token", "2.00dOFS2ChvFO3Db273eba8caNinXIE"));
+        params.add(new BasicNameValuePair("access_token", "2.00dOFS2CexwhlD60f2130aa5bqyP2D"));
         params.add(new BasicNameValuePair("q", keyword));
         params.add(new BasicNameValuePair("coordinate", longitude + "," + latitude));
         params.add(new BasicNameValuePair("range", String.valueOf(range)));
