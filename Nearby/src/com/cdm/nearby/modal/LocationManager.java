@@ -31,6 +31,9 @@ public class LocationManager extends BaseManger {
         locationClient.registerLocationListener(new BDLocationListener() {
             @Override
             public void onReceiveLocation(BDLocation bdLocation) {
+
+                locationClient.unRegisterLocationListener(this);
+
                 lastLocation = new Location();
                 lastLocation.setAddress(bdLocation.getAddrStr());
                 lastLocation.setLatitude(bdLocation.getLatitude());
